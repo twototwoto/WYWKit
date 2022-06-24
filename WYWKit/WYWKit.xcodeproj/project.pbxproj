@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE150AC12865F0EB00A1A387 /* WYWKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYWKit.h; sourceTree = "<group>"; };
 		EE893A6028645F9600FA0D6C /* DisplayLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayLinkViewController.h; sourceTree = "<group>"; };
 		EE893A6128645F9600FA0D6C /* DisplayLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkViewController.m; sourceTree = "<group>"; };
 		EE893A67286472B400FA0D6C /* WYWFPSLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYWFPSLabel.h; sourceTree = "<group>"; };
@@ -58,6 +59,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE150ABB2865E99800A1A387 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EE150AC32865F12400A1A387 /* Proxy */,
+				EED1BBDA2865787D00412FA3 /* Macro */,
+				EE150AC12865F0EB00A1A387 /* WYWKit.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EE150AC32865F12400A1A387 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				EE893A6C286472D200FA0D6C /* WYWWeakProxy.h */,
+				EE893A6D286472D200FA0D6C /* WYWWeakProxy.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 		EE893A6428645F9C00FA0D6C /* CADisplayLink */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +92,6 @@
 			children = (
 				EE893A67286472B400FA0D6C /* WYWFPSLabel.h */,
 				EE893A68286472B400FA0D6C /* WYWFPSLabel.m */,
-				EE893A6C286472D200FA0D6C /* WYWWeakProxy.h */,
-				EE893A6D286472D200FA0D6C /* WYWWeakProxy.m */,
 			);
 			path = WYWFPSLabel;
 			sourceTree = "<group>";
@@ -118,7 +136,7 @@
 		EEC6E0D423CDC32A000C16D1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EED1BBDA2865787D00412FA3 /* Macro */,
+				EE150ABB2865E99800A1A387 /* Core */,
 				EE893A662864729400FA0D6C /* WYWFPSLabel */,
 				EEC6E0D523CDC3E5000C16D1 /* WYWNavigationBar.h */,
 				EEC6E0D623CDC3E5000C16D1 /* WYWNavigationBar.m */,
@@ -297,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -349,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
