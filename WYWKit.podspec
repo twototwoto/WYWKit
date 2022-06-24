@@ -16,14 +16,14 @@ Pod::Spec.new do |spec|
     spec.requires_arc = true
     
     spec.subspec 'Core' do |core|
-        core.source_files = 'WYWKit/WYWKit/Core/*.{h,m}', 'WYWKit/WYWKit/WYWKit.h'
+        core.source_files = 'WYWKit/WYWKit/Classes/Core/*.{h,m}', 'WYWKit/WYWKit/Classes/WYWKit.h'
     end
     
     spec.subspec 'WYWFPSLabel' do |fps|
         fps.ios.deployment_target = '9.0'
-        fps.source_files = 'WYWKit/WYWKit/WYWFPSLabel/*.{h,m}'
+        fps.source_files = 'WYWKit/WYWKit/Classes/WYWFPSLabel/*.{h,m}'
         fps.framework = 'WYWFPSLabel'
-        fps.dependency 'WYWKit/WYWKit/Core'
+        fps.dependency 'WYWKit/WYWKit/Classes/Core'
     end
     
     # spec.exclude_files = "Classes/Exclude"
