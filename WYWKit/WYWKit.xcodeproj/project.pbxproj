@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE893A6228645F9600FA0D6C /* DisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE893A6128645F9600FA0D6C /* DisplayLinkViewController.m */; };
+		EE893A69286472B400FA0D6C /* WYWFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE893A68286472B400FA0D6C /* WYWFPSLabel.m */; };
+		EE893A6E286472D200FA0D6C /* WYWWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE893A6D286472D200FA0D6C /* WYWWeakProxy.m */; };
 		EEC6E0BD23CDC280000C16D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC6E0BC23CDC280000C16D1 /* AppDelegate.m */; };
 		EEC6E0C023CDC280000C16D1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC6E0BF23CDC280000C16D1 /* SceneDelegate.m */; };
 		EEC6E0C323CDC280000C16D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC6E0C223CDC280000C16D1 /* ViewController.m */; };
@@ -15,9 +18,16 @@
 		EEC6E0CB23CDC282000C16D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC6E0C923CDC282000C16D1 /* LaunchScreen.storyboard */; };
 		EEC6E0CE23CDC282000C16D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC6E0CD23CDC282000C16D1 /* main.m */; };
 		EEC6E0D723CDC3E5000C16D1 /* WYWNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC6E0D623CDC3E5000C16D1 /* WYWNavigationBar.m */; };
+		EED1BBE0286586C800412FA3 /* EventView.m in Sources */ = {isa = PBXBuildFile; fileRef = EED1BBDF286586C800412FA3 /* EventView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE893A6028645F9600FA0D6C /* DisplayLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayLinkViewController.h; sourceTree = "<group>"; };
+		EE893A6128645F9600FA0D6C /* DisplayLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkViewController.m; sourceTree = "<group>"; };
+		EE893A67286472B400FA0D6C /* WYWFPSLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYWFPSLabel.h; sourceTree = "<group>"; };
+		EE893A68286472B400FA0D6C /* WYWFPSLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYWFPSLabel.m; sourceTree = "<group>"; };
+		EE893A6C286472D200FA0D6C /* WYWWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYWWeakProxy.h; sourceTree = "<group>"; };
+		EE893A6D286472D200FA0D6C /* WYWWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYWWeakProxy.m; sourceTree = "<group>"; };
 		EEC6E0B823CDC280000C16D1 /* WYWKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYWKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC6E0BB23CDC280000C16D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEC6E0BC23CDC280000C16D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,6 +42,9 @@
 		EEC6E0CD23CDC282000C16D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEC6E0D523CDC3E5000C16D1 /* WYWNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYWNavigationBar.h; sourceTree = "<group>"; };
 		EEC6E0D623CDC3E5000C16D1 /* WYWNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYWNavigationBar.m; sourceTree = "<group>"; };
+		EED1BBDB286578BE00412FA3 /* WYWMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYWMacro.h; sourceTree = "<group>"; };
+		EED1BBDE286586C800412FA3 /* EventView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventView.h; sourceTree = "<group>"; };
+		EED1BBDF286586C800412FA3 /* EventView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE893A6428645F9C00FA0D6C /* CADisplayLink */ = {
+			isa = PBXGroup;
+			children = (
+				EE893A6028645F9600FA0D6C /* DisplayLinkViewController.h */,
+				EE893A6128645F9600FA0D6C /* DisplayLinkViewController.m */,
+			);
+			path = CADisplayLink;
+			sourceTree = "<group>";
+		};
+		EE893A662864729400FA0D6C /* WYWFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EE893A67286472B400FA0D6C /* WYWFPSLabel.h */,
+				EE893A68286472B400FA0D6C /* WYWFPSLabel.m */,
+				EE893A6C286472D200FA0D6C /* WYWWeakProxy.h */,
+				EE893A6D286472D200FA0D6C /* WYWWeakProxy.m */,
+			);
+			path = WYWFPSLabel;
+			sourceTree = "<group>";
+		};
 		EEC6E0AF23CDC280000C16D1 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +97,8 @@
 		EEC6E0BA23CDC280000C16D1 /* WYWKit */ = {
 			isa = PBXGroup;
 			children = (
+				EED1BBDD286586A700412FA3 /* EventPass */,
+				EE893A6428645F9C00FA0D6C /* CADisplayLink */,
 				EEC6E0D423CDC32A000C16D1 /* Classes */,
 				EEC6E0BB23CDC280000C16D1 /* AppDelegate.h */,
 				EEC6E0BC23CDC280000C16D1 /* AppDelegate.m */,
@@ -83,10 +118,29 @@
 		EEC6E0D423CDC32A000C16D1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EED1BBDA2865787D00412FA3 /* Macro */,
+				EE893A662864729400FA0D6C /* WYWFPSLabel */,
 				EEC6E0D523CDC3E5000C16D1 /* WYWNavigationBar.h */,
 				EEC6E0D623CDC3E5000C16D1 /* WYWNavigationBar.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		EED1BBDA2865787D00412FA3 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				EED1BBDB286578BE00412FA3 /* WYWMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		EED1BBDD286586A700412FA3 /* EventPass */ = {
+			isa = PBXGroup;
+			children = (
+				EED1BBDE286586C800412FA3 /* EventView.h */,
+				EED1BBDF286586C800412FA3 /* EventView.m */,
+			);
+			path = EventPass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC6E0D723CDC3E5000C16D1 /* WYWNavigationBar.m in Sources */,
+				EE893A6228645F9600FA0D6C /* DisplayLinkViewController.m in Sources */,
+				EE893A6E286472D200FA0D6C /* WYWWeakProxy.m in Sources */,
+				EE893A69286472B400FA0D6C /* WYWFPSLabel.m in Sources */,
 				EEC6E0C323CDC280000C16D1 /* ViewController.m in Sources */,
 				EEC6E0BD23CDC280000C16D1 /* AppDelegate.m in Sources */,
 				EEC6E0CE23CDC282000C16D1 /* main.m in Sources */,
+				EED1BBE0286586C800412FA3 /* EventView.m in Sources */,
 				EEC6E0C023CDC280000C16D1 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,16 +361,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ZX24TX624;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WYWKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qishare.ios.wyw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itcoderw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,16 +380,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ZX24TX624;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WYWKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qishare.ios.wyw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itcoderw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
