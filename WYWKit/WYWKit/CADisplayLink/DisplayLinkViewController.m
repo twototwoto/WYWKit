@@ -78,6 +78,11 @@ static NSInteger const kCatonFator = 20;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellReuseIdentifier];
     }
     cell.textLabel.text = _sourceArray[indexPath.row];
+    if ([self isCatonCondition:indexPath.row]) {
+        cell.textLabel.backgroundColor = [UIColor redColor];
+    } else {
+        cell.textLabel.backgroundColor = [UIColor whiteColor];
+    }
     return cell;
 }
 
